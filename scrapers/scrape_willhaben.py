@@ -8,6 +8,8 @@ import re
 
 from db import insert_car
 
+def run_scrape(start_url: str, log_cb=print):
+    log_cb(f"run_scrape gestartet, URL = {start_url}")
 
 SEARCH_URL = (
     "https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=dfa343fc-cab3-4c8c-8b6e-3eb5fc9e0002&isNavigation=true&CAR_TYPE=6&CAR_MODEL/MAKE=1003&CAR_MODEL/MODEL=1024&CAR_MODEL/MODEL=2065&rows=30&page=1&YEAR_MODEL_FROM=2018&MILEAGE_TO=150000&PRICE_TO=30000"
@@ -172,7 +174,7 @@ def scroll_until_all_loaded(page, max_rounds=30):
         links = page.query_selector_all('a[href^="/iad/gebrauchtwagen/d/auto/"]')
         current_count = len({el.get_attribute("href") for el in links if el.get_attribute("href")})
 
-        print(f"Scroll {i + 1}: {current_count} Inserate")
+        log_cb(f"Scroll {i + 1}: {current_count} Inserate")
 
         if current_count == last_count:
             stable_rounds += 1
@@ -207,7 +209,7 @@ def run():
         page.wait_for_timeout(1500)
 
         clicked = accept_cookies(page)
-        print("Cookie Accept (home):", "ok" if clicked else "nicht gefunden/ignoriert")
+        log_cb("Cookie Accept (home):", "ok" if clicked else "nicht gefunden/ignoriert")
         page.wait_for_timeout(1200)
 
         # 2) Search
@@ -215,14 +217,14 @@ def run():
         page.wait_for_timeout(2000)
 
         clicked = accept_cookies(page)
-        print("Cookie Accept (search):", "ok" if clicked else "nicht gefunden/ignoriert")
+        log_cb("Cookie Accept (search):", "ok" if clicked else "nicht gefunden/ignoriert")
         page.wait_for_timeout(1200)
 
         all_links = set()
         page_number = 1
 
         while True:
-            print(f"\n📄 Seite {page_number}")
+            log_cb(f"\n📄 Seite {page_number}")
 
             # aktuelle Seite vollständig scrollen
             scroll_until_all_loaded(page)
@@ -237,7 +239,7 @@ def run():
                 if href:
                     all_links.add("https://www.willhaben.at" + href)
 
-            print("Gesammelte Inserate gesamt:", len(all_links))
+            log_cb("Gesammelte Inserate gesamt:", len(all_links))
 
             next_page = page_number + 1
 
@@ -246,10 +248,10 @@ def run():
             )
 
             if not next_btn:
-                print("➡️ Keine weitere Seite gefunden")
+                log_cb("➡️ Keine weitere Seite gefunden")
                 break
 
-            print(f"➡️ Wechsle zu Seite {next_page}")
+            log_cb(f"➡️ Wechsle zu Seite {next_page}")
             next_btn.click()
             page.wait_for_timeout(4000)
             page_number += 1
@@ -260,7 +262,7 @@ def run():
 
 
         for idx, url in enumerate(ad_links, start=1):
-            print(f"➡️ Inserat {idx}/{len(ad_links)}")
+            log_cb(f"➡️ Inserat {idx}/{len(ad_links)}")
 
             try:
                 page.goto(url, wait_until="domcontentloaded", timeout=30000)
@@ -316,15 +318,24 @@ def run():
                 insert_car(car)
 
             except PlaywrightTimeoutError as e:
-                print("⚠️ Timeout:", e)
+                log_cb("⚠️ Timeout:", e)
                 continue
             except Exception as e:
-                print("⚠️ Fehler:", e)
+                log_cb("⚠️ Fehler:", e)
                 continue
 
-        print("✅ Alle Inserate gespeichert")
+        log_cb("✅ Alle Inserate gespeichert")
         page.pause()
 
 
 if __name__ == "__main__":
-    run()
+    from config import WILLHABEN_SFID
+    from willhaben_url import build_search_url
+
+    url = build_search_url(
+        sfId=WILLHABEN_SFID,
+        rows=30,
+        page=1,
+
+    )
+    run_scrape(url)

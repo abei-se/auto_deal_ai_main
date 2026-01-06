@@ -14,6 +14,7 @@ DB_HOST = "localhost"
 DB_PORT = 5432
 DB_NAME = "auto_deals"
 
-DATABASE_URL = (
-    f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-)
+DATABASE_URL = "sqlite:///auto_deal.db"
+
+
+WILLHABEN_SFID = "7d36a787-9d02-45d9-9141-81ad3b805c2b"  # nimm einen, der bei dir funktioniert
