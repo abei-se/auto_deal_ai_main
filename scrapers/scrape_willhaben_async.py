@@ -15,7 +15,8 @@ REAL_UA = (
     "Chrome/120.0.0.0 Safari/537.36"
 )
 
-MAX_WORKERS = 4
+MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "4"))
+
 
 def parse_int(text):
     if not text:
