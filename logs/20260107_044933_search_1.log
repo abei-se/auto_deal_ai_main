@@ -1,0 +1,124 @@
+[04:49:33] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1065&CAR_MODEL%2FMODEL=1691&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=15000
+[04:49:36] Cookie Accept (home): ok
+[04:49:38] Cookie Accept (search): nicht gefunden/ignoriert
+[04:49:38] Seite 1
+[04:49:39] Scroll 1: 10 Inserate
+[04:49:39] Scroll 2: 15 Inserate
+[04:49:40] Scroll 3: 18 Inserate
+[04:49:41] Scroll 4: 23 Inserate
+[04:49:42] Scroll 5: 28 Inserate
+[04:49:43] Scroll 6: 33 Inserate
+[04:49:43] Scroll 7: 33 Inserate
+[04:49:44] Scroll 8: 33 Inserate
+[04:49:44] Gesammelte Inserate gesamt: 33
+[04:49:44] Wechsle zu Seite 2
+[04:49:46] Seite 2
+[04:49:47] Scroll 1: 19 Inserate
+[04:49:48] Scroll 2: 19 Inserate
+[04:49:49] Scroll 3: 19 Inserate
+[04:49:49] Gesammelte Inserate gesamt: 51
+[04:49:49] Keine weitere Seite gefunden
+[04:49:49] Starte Parallel-Detailverarbeitung mit 4 Workern
+[04:49:49] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-variant-comfortline-2-0-tdi-dsg-ahk-1084577242/
+[04:49:49] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-tdi-1049641077/
+[04:49:49] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-1-0-tsi-comfortline-facelift-virtu-1805520045/
+[04:49:49] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-859103239/
+[04:49:49] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-variant-comfortline-2-0-tdi-dsg-ahk-1084577242/
+[04:49:49] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-859103239/
+[04:49:49] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-5-tsi-act-bluemotion-dsg-1603770089/
+[04:49:49] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tsi-acc-app-connect-1854870464/
+[04:49:49] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-1-0-tsi-comfortline-facelift-virtu-1805520045/
+[04:49:49] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-rabbit-1846764242/
+[04:49:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-tdi-1049641077/
+[04:49:50] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1458001935/
+[04:49:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-rabbit-1846764242/
+[04:49:50] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1242976223/
+[04:49:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-5-tsi-act-bluemotion-dsg-1603770089/
+[04:49:50] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sport-2-0-bmt-tdi-allstar-nur-113tkm-vermittlungsverkauf-1859355176/
+[04:49:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tsi-acc-app-connect-1854870464/
+[04:49:50] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-8-rabbit-1875379491/
+[04:49:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1242976223/
+[04:49:51] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1878921992/
+[04:49:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1458001935/
+[04:49:51] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-1-5-tgi-bluemotion-dsg-cng-benzin-1891606377/
+[04:49:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-8-rabbit-1875379491/
+[04:49:51] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1457130218/
+[04:49:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sport-2-0-bmt-tdi-allstar-nur-113tkm-vermittlungsverkauf-1859355176/
+[04:49:51] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-trendline-1-0-tsi-1888604929/
+[04:49:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1878921992/
+[04:49:52] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-tempomat-klima-pd-1489925463/
+[04:49:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-trendline-1-0-tsi-1888604929/
+[04:49:52] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1968942349/
+[04:49:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1457130218/
+[04:49:52] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1390165192/
+[04:49:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-1-5-tgi-bluemotion-dsg-cng-benzin-1891606377/
+[04:49:52] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tdi-1-6-116-ps-mit-diffsperre-xds-1292747953/
+[04:49:53] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1968942349/
+[04:49:53] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-1524132195/
+[04:49:53] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-tempomat-klima-pd-1489925463/
+[04:49:53] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-gtd-2-0-tdi-dsg-1991188786/
+[04:49:53] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1390165192/
+[04:49:53] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1791857334/
+[04:49:53] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tdi-1-6-116-ps-mit-diffsperre-xds-1292747953/
+[04:49:53] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-2-0-tdi-life-move-dsg-lenkradheizung-kamera-1300528894/
+[04:49:54] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1791857334/
+[04:49:54] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-oeamtc-pickerl-neu-1824838027/
+[04:49:54] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-1524132195/
+[04:49:54] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1500543547/
+[04:49:54] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-gtd-2-0-tdi-dsg-1991188786/
+[04:49:54] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1338609472/
+[04:49:54] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-oeamtc-pickerl-neu-1824838027/
+[04:49:54] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-r-line-1983920244/
+[04:49:54] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-2-0-tdi-life-move-dsg-lenkradheizung-kamera-1300528894/
+[04:49:54] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-sitzhzg-temp-1268664675/
+[04:49:55] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1338609472/
+[04:49:55] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-trendline-1-besitz-1649738785/
+[04:49:55] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-trendline-1-besitz-1649738785/
+[04:49:55] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-led-navi-pdc-vo-hi-app-1485172914/
+[04:49:55] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-r-line-1983920244/
+[04:49:55] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1500543547/
+[04:49:55] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1263291876/
+[04:49:55] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-nur-70-000-2057942015/
+[04:49:56] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-sitzhzg-temp-1268664675/
+[04:49:56] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-4-tsi-1764278329/
+[04:49:57] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1263291876/
+[04:49:57] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-viii-lim-basis-1092594924/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-led-navi-pdc-vo-hi-app-1485172914/
+[04:49:58] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-5-facelift-highline-optik-led-kamera-1778041166/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-nur-70-000-2057942015/
+[04:49:58] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-6-tdi-1926851510/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-4-tsi-1764278329/
+[04:49:58] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-led-navi-1043260488/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-viii-lim-basis-1092594924/
+[04:49:58] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-5-l-plug-in-hybrid-848595791/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-6-tdi-1926851510/
+[04:49:58] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-5-facelift-highline-optik-led-kamera-1778041166/
+[04:49:58] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vw-golf-limousine-1421495295/
+[04:49:58] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-egolf-mit-bat-36kw-1163553199/
+[04:49:59] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-5-l-plug-in-hybrid-848595791/
+[04:49:59] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1859405749/
+[04:49:59] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-led-navi-1043260488/
+[04:49:59] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-2020303848/
+[04:49:59] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-egolf-mit-bat-36kw-1163553199/
+[04:49:59] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vw-golf-limousine-1421495295/
+[04:49:59] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-facelift-virtual-cockpit-kamera-navi-ccs-1332606887/
+[04:49:59] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-ahk-panorama-kurvenlicht-assistent-led-1530388513/
+[04:50:00] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-2020303848/
+[04:50:00] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-r-line-virtual-cockpit-app-connect-891775484/
+[04:50:00] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-facelift-virtual-cockpit-kamera-navi-ccs-1332606887/
+[04:50:00] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-ccs-navi-pdc-acc-ruec-1055223161/
+[04:50:00] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-ahk-panorama-kurvenlicht-assistent-led-1530388513/
+[04:50:00] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-tsi-navi-acc-app-shz-front-light-1164962321/
+[04:50:00] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1859405749/
+[04:50:00] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-1-0-tsi-1856809641/
+[04:50:01] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-r-line-virtual-cockpit-app-connect-891775484/
+[04:50:01] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1955614804/
+[04:50:01] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-tsi-navi-acc-app-shz-front-light-1164962321/
+[04:50:01] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-tsi-comfortline-nur-24-911-km-1174017022/
+[04:50:01] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-1-0-tsi-1856809641/
+[04:50:01] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vii-rabbit-40-tsi-1-0-2002803272/
+[04:50:02] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-ccs-navi-pdc-acc-ruec-1055223161/
+[04:50:02] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1955614804/
+[04:50:02] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-tsi-comfortline-nur-24-911-km-1174017022/
+[04:50:02] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vii-rabbit-40-tsi-1-0-2002803272/
+[04:50:03] Alle Inserate gespeichert

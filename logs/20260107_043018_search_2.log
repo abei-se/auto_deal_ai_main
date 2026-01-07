@@ -1,0 +1,158 @@
+[04:30:18] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1056&CAR_MODEL%2FMODEL=1590&YEAR_MODEL_FROM=2016&MILEAGE_TO=100000&PRICE_TO=15000
+[04:30:22] Cookie Accept (home): ok
+[04:30:24] Cookie Accept (search): nicht gefunden/ignoriert
+[04:30:24] Seite 1
+[04:30:25] Scroll 1: 11 Inserate
+[04:30:26] Scroll 2: 16 Inserate
+[04:30:27] Scroll 3: 21 Inserate
+[04:30:29] Scroll 4: 23 Inserate
+[04:30:30] Scroll 5: 23 Inserate
+[04:30:30] Gesammelte Inserate gesamt: 23
+[04:30:30] Keine weitere Seite gefunden
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1285217354/
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-facelift-navi-voll-led-1558253107/
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1952769893/
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-1966330321/
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-start-stopp-1439954256/
+[04:30:30] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tsi-fr-1959790049/
+[04:30:30] Inserat 7/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-sp-fr-edition-1-5-tsi-115-ps-1992224858/
+[04:30:33] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:30:33] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '1992224858', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-sp-fr-edition-1-5-tsi-115-ps-1992224858/', 'Seat Leon SP FR Edition 1.5 TSI 115 PS Kombi / Family Van', 'Seat', 'Leon', None, None, 2025, 6500, 28998, 116, 'Benzin', 'Schaltgetriebe', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-tsi-style-design-paket-1108968698/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-2-tsi-shz-pdc-849399607/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-executive-1-2-tsi-1230333947/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-2-0-tdi-fr-pickerl-neu-1242217935/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1653541520/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-2-0l-1086749556/
+[04:30:33] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-ab-ca-109-monatlich-1195455540/
+[04:30:33] Inserat 15/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-0-tsi-style-990663273/
+[04:30:35] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:30:35] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '990663273', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-0-tsi-style-990663273/', 'Seat Leon 1.0 TSI Style Limousine', 'Seat', 'Leon', None, None, 2022, 30000, 16990, 90, 'Benzin', 'Schaltgetriebe', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:30:35] Inserat 16/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-975797802/
+[04:30:38] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:30:38] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '975797802', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-975797802/', 'Seat Leon Xcellence Limousine', 'Seat', 'Leon', None, None, 2018, 73800, 15990, 150, 'Benzin', 'Schaltgetriebe', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-black-edition-1-5-tgi-1972606265/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-sitzh-temp-bt-mfl-1442237237/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-0-ecotsi-start-stopp-1850176241/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tgi-fr-virtual-panorama-keyless-led-990796751/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-alcantara-schiebedach-1445497600/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-act-dsg-start-stopp-775885510/
+[04:30:38] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1170765914/
+[04:30:38] Alle Inserate gespeichert

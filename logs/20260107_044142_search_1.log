@@ -1,0 +1,20 @@
+[04:41:42] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1065&CAR_MODEL%2FMODEL=1691&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=15000
+[04:41:48] Cookie Accept (home): ok
+[04:41:50] Cookie Accept (search): nicht gefunden/ignoriert
+[04:41:50] Seite 1
+[04:41:51] Scroll 1: 10 Inserate
+[04:41:52] Scroll 2: 15 Inserate
+[04:41:53] Scroll 3: 20 Inserate
+[04:41:54] Scroll 4: 25 Inserate
+[04:41:55] Scroll 5: 30 Inserate
+[04:41:56] Scroll 6: 33 Inserate
+[04:41:57] Scroll 7: 33 Inserate
+[04:41:57] Gesammelte Inserate gesamt: 33
+[04:41:57] Wechsle zu Seite 2
+[04:42:00] Seite 2
+[04:42:02] Scroll 1: 19 Inserate
+[04:42:03] Scroll 2: 19 Inserate
+[04:42:04] Scroll 3: 19 Inserate
+[04:42:04] Gesammelte Inserate gesamt: 52
+[04:42:04] Keine weitere Seite gefunden
+[04:42:04] Starte Parallel-Detailverarbeitung mit 4 Workern

@@ -1,0 +1,193 @@
+[04:30:57] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1057&CAR_MODEL%2FMODEL=1600&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=20000
+[04:31:01] Cookie Accept (home): ok
+[04:31:03] Cookie Accept (search): nicht gefunden/ignoriert
+[04:31:03] Seite 1
+[04:31:05] Scroll 1: 9 Inserate
+[04:31:06] Scroll 2: 14 Inserate
+[04:31:07] Scroll 3: 17 Inserate
+[04:31:08] Scroll 4: 17 Inserate
+[04:31:09] Scroll 5: 17 Inserate
+[04:31:10] Gesammelte Inserate gesamt: 17
+[04:31:10] Keine weitere Seite gefunden
+[04:31:10] Inserat 1/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-limousine-acc-service-neu-pickerl-06-26-1624137169/
+[04:31:13] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=['acc']
+[04:31:13] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '1624137169', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-limousine-acc-service-neu-pickerl-06-26-1624137169/', 'Skoda Octavia 1,6 TDI Limousine/ACC/Service NEU/Pickerl:06/26 Limousine', 'Skoda', 'Octavia', None, None, 2017, 150000, 9500, 116, 'Diesel', 'Schaltgetriebe', 'Vorderrad', None, None, '["acc"]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:31:13] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-e-tec-ambition-dsg-limousine-s-1607464454/
+[04:31:13] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-ambition-1844004730/
+[04:31:13] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-ambition-led-navi-radar-rfk-lm-1914389209/
+[04:31:13] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-5-tsi-ambition-limited-1843073648/
+[04:31:13] Inserat 6/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-sportline-tdi-dsg-1079515330/
+[04:31:15] EXTRA: fuel=Diesel, trans=Automatik, drive=Vorderrad, feats=[]
+[04:31:15] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '1079515330', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-sportline-tdi-dsg-1079515330/', 'Skoda Octavia Sportline TDI DSG Klein-/ Kompaktwagen', 'Skoda', 'Octavia', None, None, 2024, 23560, 34360, 150, 'Diesel', 'Automatik', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:31:15] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tsi-limited-vrs-909144286/
+[04:31:15] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-iv-combi-ambition-virtual-navi-kamera-led-1400341155/
+[04:31:15] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-940145440/
+[04:31:15] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-business-2-0-tdi-1560207703/
+[04:31:15] Inserat 11/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-rs-2-0-tsi-dsg-1704666786/
+[04:31:18] EXTRA: fuel=Benzin, trans=Automatik, drive=Vorderrad, feats=[]
+[04:31:18] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '1704666786', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-rs-2-0-tsi-dsg-1704666786/', 'Skoda Octavia RS 2,0 TSI DSG Limousine', 'Skoda', 'Octavia', None, None, 2020, 74000, 25900, 245, 'Benzin', 'Automatik', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:31:18] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-1760850857/
+[04:31:18] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-ambition-tdi-1744289322/
+[04:31:18] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-ambition-115ps-2-0-tdi-schalter-1027876327/
+[04:31:18] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-1220975145/
+[04:31:18] Inserat 16/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-1-0-tsi-e-tec-ambition-dsg-1857672242/
+[04:31:21] EXTRA: fuel=Benzin, trans=Automatik, drive=Vorderrad, feats=[]
+[04:31:21] Fehler: (sqlite3.OperationalError) table cars has no column named first_seen
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: ('willhaben', '1857672242', 'https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-1-0-tsi-e-tec-ambition-dsg-1857672242/', 'Skoda Octavia Combi 1,0 TSI e-Tec Ambition DSG Kombi / Family Van', 'Skoda', 'Octavia', None, None, 2021, 102100, 18470, 110, 'Benzin', 'Automatik', 'Vorderrad', None, None, '[]', None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[04:31:21] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-style-4x4-dsg-2039156519/
+[04:31:21] Alle Inserate gespeichert

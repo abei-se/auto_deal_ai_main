@@ -1,0 +1,54 @@
+[04:50:33] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1056&CAR_MODEL%2FMODEL=1590&YEAR_MODEL_FROM=2016&MILEAGE_TO=100000&PRICE_TO=15000
+[04:50:37] Cookie Accept (home): ok
+[04:50:39] Cookie Accept (search): nicht gefunden/ignoriert
+[04:50:39] Seite 1
+[04:50:39] Scroll 1: 7 Inserate
+[04:50:40] Scroll 2: 12 Inserate
+[04:50:41] Scroll 3: 17 Inserate
+[04:50:42] Scroll 4: 20 Inserate
+[04:50:42] Scroll 5: 20 Inserate
+[04:50:43] Scroll 6: 20 Inserate
+[04:50:43] Gesammelte Inserate gesamt: 20
+[04:50:43] Keine weitere Seite gefunden
+[04:50:43] Starte Parallel-Detailverarbeitung mit 4 Workern
+[04:50:43] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1952769893/
+[04:50:43] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1653541520/
+[04:50:43] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-act-dsg-start-stopp-775885510/
+[04:50:43] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-start-stopp-1439954256/
+[04:50:44] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1952769893/
+[04:50:44] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-alcantara-schiebedach-1445497600/
+[04:50:44] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1653541520/
+[04:50:44] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1285217354/
+[04:50:44] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-start-stopp-1439954256/
+[04:50:44] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-2-0-tdi-fr-pickerl-neu-1242217935/
+[04:50:44] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-act-dsg-start-stopp-775885510/
+[04:50:44] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-2-tsi-shz-pdc-849399607/
+[04:50:44] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-alcantara-schiebedach-1445497600/
+[04:50:44] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-2-0l-1086749556/
+[04:50:45] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-2-0l-1086749556/
+[04:50:45] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-ab-ca-109-monatlich-1195455540/
+[04:50:46] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1285217354/
+[04:50:46] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-tsi-style-design-paket-1108968698/
+[04:50:46] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-2-0-tdi-fr-pickerl-neu-1242217935/
+[04:50:46] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-executive-1-2-tsi-1230333947/
+[04:50:47] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-2-tsi-shz-pdc-849399607/
+[04:50:47] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-0-ecotsi-start-stopp-1850176241/
+[04:50:47] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-ab-ca-109-monatlich-1195455540/
+[04:50:47] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1170765914/
+[04:50:48] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-tsi-style-design-paket-1108968698/
+[04:50:48] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-black-edition-1-5-tgi-1972606265/
+[04:50:49] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-0-ecotsi-start-stopp-1850176241/
+[04:50:49] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-1966330321/
+[04:50:49] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-executive-1-2-tsi-1230333947/
+[04:50:49] [W4] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tsi-fr-1959790049/
+[04:50:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1170765914/
+[04:50:50] [W1] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tgi-fr-virtual-panorama-keyless-led-990796751/
+[04:50:50] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-black-edition-1-5-tgi-1972606265/
+[04:50:50] [W2] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-sitzh-temp-bt-mfl-1442237237/
+[04:50:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-1966330321/
+[04:50:51] [W3] https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-facelift-navi-voll-led-1558253107/
+[04:50:51] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tsi-fr-1959790049/
+[04:50:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tgi-fr-virtual-panorama-keyless-led-990796751/
+[04:50:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-sitzh-temp-bt-mfl-1442237237/
+[04:50:52] Gespeichert: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-facelift-navi-voll-led-1558253107/
+[04:50:53] Alle Inserate gespeichert

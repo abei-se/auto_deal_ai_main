@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32fe4393-c1ca-4419-abf1-288863b759f8" name="Changes" comment="Commit" />
+    <list default="true" id="32fe4393-c1ca-4419-abf1-288863b759f8" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/migrate_db_sqlite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapers/scrape_willhaben_async.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_id_candidates.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto_deal.db" beforeDir="false" afterPath="$PROJECT_DIR$/auto_deal.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/batch_run_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/batch_run_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brands.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetch_willhaben_brands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next_data_id_candidates.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/scrape_willhaben.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/scrape_willhaben.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,15 +33,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "abei-se"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;abei-se&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/abei-se/auto_deal_ai.git",
+    "url": "https://github.com/abei-se/auto_deal_ai_main.git",
     "accountId": "860644f0-419f-415d-8471-b8cf28d46b34"
   }
 }]]></component>
@@ -36,9 +49,9 @@
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="37u1EZy41jyWdbR5gbKW1FhYf3l" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.scrape_willhaben.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
@@ -94,6 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767738030633</updated>
       <workItem from="1767738031739" duration="9271000" />
+      <workItem from="1767753789404" duration="3823000" />
     </task>
     <servers />
   </component>

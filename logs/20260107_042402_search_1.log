@@ -1,0 +1,191 @@
+[04:24:02] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1065&CAR_MODEL%2FMODEL=1691&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=15000
+[04:24:08] Cookie Accept (home): ok
+[04:24:10] Cookie Accept (search): nicht gefunden/ignoriert
+[04:24:10] Seite 1
+[04:24:11] Scroll 1: 11 Inserate
+[04:24:12] Scroll 2: 16 Inserate
+[04:24:13] Scroll 3: 21 Inserate
+[04:24:14] Scroll 4: 26 Inserate
+[04:24:15] Scroll 5: 31 Inserate
+[04:24:15] Gesammelte Inserate gesamt: 31
+[04:24:15] Wechsle zu Seite 2
+[04:24:18] Seite 2
+[04:24:19] Scroll 1: 19 Inserate
+[04:24:20] Scroll 2: 19 Inserate
+[04:24:21] Scroll 3: 19 Inserate
+[04:24:21] Gesammelte Inserate gesamt: 50
+[04:24:21] Keine weitere Seite gefunden
+[04:24:21] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-6-tdi-1926851510/
+[04:24:21] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-oeamtc-pickerl-neu-1824838027/
+[04:24:21] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-2020303848/
+[04:24:21] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tdi-1-6-116-ps-mit-diffsperre-xds-1292747953/
+[04:24:21] Inserat 5/50: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vii-1-5-tsi-bluemotion-comfortline-946765032/
+[04:24:23] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:24:23] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '946765032', 'title': 'VW Golf VII 1.5 TSI BlueMotion Comfortline Limousine', 'brand': 'VW', 'model': 'Golf', ... (202 characters truncated) ... ype': 'Benzin', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-tsi-navi-acc-app-shz-front-light-1164962321/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vw-golf-limousine-1421495295/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-sitzhzg-temp-1268664675/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-5-tsi-act-bluemotion-dsg-1603770089/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vii-rabbit-40-tsi-1-0-2002803272/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1390165192/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-tempomat-klima-pd-1489925463/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-tsi-acc-app-connect-1854870464/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-led-navi-pdc-vo-hi-app-1485172914/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-facelift-virtual-cockpit-kamera-navi-ccs-1332606887/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-trendline-1-0-tsi-1888604929/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1458001935/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1791857334/
+[04:24:23] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-nur-70-000-2057942015/
+[04:24:23] Inserat 20/50: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-variant-1-0-tsi-life-standhz-rfk-acc-2075425890/
+[04:24:25] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=['acc']
+[04:24:25] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '2075425890', 'title': 'VW Golf Variant 1,0 TSI Life | STANDHZ/RFK/ACC Kombi / Family Van', 'brand': 'VW', 'm ... (223 characters truncated) ...  'Benzin', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '["acc"]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-tdi-1049641077/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1968942349/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-trendline-1-besitz-1649738785/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-1-0-tsi-1856809641/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-8-rabbit-1875379491/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1955614804/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-vi-trendline-1-4er-1532722847/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-ccs-navi-pdc-acc-ruec-1055223161/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-1-0-tsi-comfortline-1242976223/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-859103239/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-r-line-virtual-cockpit-app-connect-891775484/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-ii-colour-clean-and-sound-showcar-gti-treff-1664073140/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-6-1524132195/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1263291876/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-vii-36kwh-aut-led-radar-navi-assist-temp-1338609472/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-tsi-ahk-panorama-kurvenlicht-assistent-led-1530388513/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-1859405749/
+[04:24:25] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-led-navi-1043260488/
+[04:24:25] Inserat 39/50: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1500543547/
+[04:24:28] EXTRA: fuel=Elektro, trans=Automatik, drive=Vorderrad, feats=[]
+[04:24:28] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '1500543547', 'title': 'VW Golf e-Golf 35,8kWh (mit Batterie) Limousine', 'brand': 'VW', 'model': 'Golf', 'ye ... (187 characters truncated) ... el_type': 'Elektro', 'transmission': 'Automatik', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-r-line-1983920244/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-1-0-tsi-comfortline-facelift-virtu-1805520045/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-egolf-mit-bat-36kw-1163553199/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-comfortline-1-4-tsi-1764278329/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-viii-lim-basis-1092594924/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-7-5-facelift-highline-optik-led-kamera-1778041166/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-1-0-tsi-rabbit-1846764242/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-rabbit-40-1-0-tsi-1457130218/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sport-2-0-bmt-tdi-allstar-nur-113tkm-vermittlungsverkauf-1859355176/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-sportsvan-comfortline-1-2tsi-1-besitz-nur-55-000km-1777515180/
+[04:24:28] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/vw-golf-e-golf-35-8kwh-mit-batterie-1878921992/
+[04:24:28] Alle Inserate gespeichert

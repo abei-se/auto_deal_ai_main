@@ -1,0 +1,33 @@
+[04:34:28] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1057&CAR_MODEL%2FMODEL=1600&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=20000
+[04:34:32] Cookie Accept (home): ok
+[04:34:34] Cookie Accept (search): nicht gefunden/ignoriert
+[04:34:34] Seite 1
+[04:34:35] Scroll 1: 9 Inserate
+[04:34:36] Scroll 2: 14 Inserate
+[04:34:37] Scroll 3: 17 Inserate
+[04:34:39] Scroll 4: 17 Inserate
+[04:34:40] Scroll 5: 17 Inserate
+[04:34:40] Gesammelte Inserate gesamt: 17
+[04:34:40] Keine weitere Seite gefunden
+[04:34:40] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-1220975145/
+[04:34:40] Inserat 2/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-rs-2-0-tsi-dsg-1704666786/
+[04:34:43] EXTRA: fuel=Benzin, trans=Automatik, drive=Vorderrad, feats=[]
+[04:34:43] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tsi-limited-vrs-909144286/
+[04:34:43] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-e-tec-ambition-dsg-limousine-s-1607464454/
+[04:34:43] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-5-tsi-ambition-limited-1843073648/
+[04:34:43] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-ambition-115ps-2-0-tdi-schalter-1027876327/
+[04:34:43] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-ambition-tdi-1744289322/
+[04:34:43] Inserat 8/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-2-0-style-tdi-4x4-dsg-898293201/
+[04:34:45] EXTRA: fuel=Diesel, trans=Automatik, drive=Allrad, feats=[]
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-business-2-0-tdi-1560207703/
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-ambition-1844004730/
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-style-4x4-dsg-2039156519/
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-940145440/
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-ambition-led-navi-radar-rfk-lm-1914389209/
+[04:34:46] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-1760850857/
+[04:34:46] Inserat 15/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-2-0-tdi-ambition-ahk-rfk-1466136672/
+[04:34:48] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=['anhängerkupplung']
+[04:34:48] Inserat 16/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-limousine-acc-service-neu-pickerl-06-26-1624137169/
+[04:34:51] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=['acc']
+[04:34:51] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-iv-combi-ambition-virtual-navi-kamera-led-1400341155/
+[04:34:51] Alle Inserate gespeichert

@@ -1,0 +1,193 @@
+[04:25:26] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1057&CAR_MODEL%2FMODEL=1600&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=20000
+[04:25:29] Cookie Accept (home): ok
+[04:25:31] Cookie Accept (search): nicht gefunden/ignoriert
+[04:25:31] Seite 1
+[04:25:32] Scroll 1: 9 Inserate
+[04:25:34] Scroll 2: 14 Inserate
+[04:25:35] Scroll 3: 17 Inserate
+[04:25:36] Scroll 4: 17 Inserate
+[04:25:37] Scroll 5: 17 Inserate
+[04:25:37] Gesammelte Inserate gesamt: 17
+[04:25:37] Keine weitere Seite gefunden
+[04:25:37] Inserat 1/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-2-0-style-tdi-4x4-dsg-898293201/
+[04:25:40] EXTRA: fuel=Diesel, trans=Automatik, drive=Allrad, feats=[]
+[04:25:40] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '898293201', 'title': 'Skoda Octavia Combi 2,0 Style TDI 4x4 DSG Kombi / Family Van', 'brand': 'Skoda', 'mode ... (207 characters truncated) ...  'fuel_type': 'Diesel', 'transmission': 'Automatik', 'drive': 'Allrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:40] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-business-2-0-tdi-1560207703/
+[04:25:40] Inserat 3/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-2-0-tdi-ambition-1612659345/
+[04:25:42] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:25:42] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '1612659345', 'title': 'Skoda Octavia Combi 2,0 TDI Ambition Kombi / Family Van', 'brand': 'Skoda', 'model':  ... (207 characters truncated) ... ype': 'Diesel', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-style-4x4-dsg-2039156519/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-ambition-led-navi-radar-rfk-lm-1914389209/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-ambition-tdi-1744289322/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-ambition-1844004730/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-0-tsi-e-tec-ambition-dsg-limousine-s-1607464454/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-combi-ambition-115ps-2-0-tdi-schalter-1027876327/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tdi-1760850857/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-iv-combi-ambition-virtual-navi-kamera-led-1400341155/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-940145440/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-1220975145/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-5-tsi-ambition-limited-1843073648/
+[04:25:42] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-2-0-tsi-limited-vrs-909144286/
+[04:25:42] Inserat 16/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-rs-2-0-tsi-dsg-1704666786/
+[04:25:44] EXTRA: fuel=Benzin, trans=Automatik, drive=Vorderrad, feats=[]
+[04:25:44] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '1704666786', 'title': 'Skoda Octavia RS 2,0 TSI DSG Limousine', 'brand': 'Skoda', 'model': 'Octavia', 'year' ... (176 characters truncated) ... uel_type': 'Benzin', 'transmission': 'Automatik', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:44] Inserat 17/17: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/skoda-octavia-1-6-tdi-limousine-acc-service-neu-pickerl-06-26-1624137169/
+[04:25:46] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=['acc']
+[04:25:46] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '1624137169', 'title': 'Skoda Octavia 1,6 TDI Limousine/ACC/Service NEU/Pickerl:06/26 Limousine', 'brand': 'S ... (252 characters truncated) ...  'Diesel', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '["acc"]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:46] Alle Inserate gespeichert

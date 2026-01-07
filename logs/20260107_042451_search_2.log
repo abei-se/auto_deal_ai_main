@@ -1,0 +1,158 @@
+[04:24:51] run_scrape gestartet: https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_TYPE=6&rows=30&page=1&CAR_MODEL%2FMAKE=1056&CAR_MODEL%2FMODEL=1590&YEAR_MODEL_FROM=2016&MILEAGE_TO=100000&PRICE_TO=15000
+[04:24:55] Cookie Accept (home): ok
+[04:24:57] Cookie Accept (search): nicht gefunden/ignoriert
+[04:24:57] Seite 1
+[04:24:58] Scroll 1: 11 Inserate
+[04:24:59] Scroll 2: 16 Inserate
+[04:25:00] Scroll 3: 21 Inserate
+[04:25:01] Scroll 4: 23 Inserate
+[04:25:02] Scroll 5: 23 Inserate
+[04:25:02] Gesammelte Inserate gesamt: 23
+[04:25:02] Keine weitere Seite gefunden
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-tsi-style-design-paket-1108968698/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1285217354/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-act-dsg-start-stopp-775885510/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-alcantara-schiebedach-1445497600/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1653541520/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-facelift-navi-voll-led-1558253107/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1952769893/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-black-edition-1-5-tgi-1972606265/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-fr-1-4-tsi-1966330321/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-1-5-tsi-ab-ca-109-monatlich-1195455540/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tsi-fr-1959790049/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-0-ecotsi-start-stopp-1850176241/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-sitzh-temp-bt-mfl-1442237237/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-2-0l-1086749556/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-executive-1-2-tsi-1230333947/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-0-tsi-1170765914/
+[04:25:02] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-style-1-6-tdi-dsg-start-stopp-1439954256/
+[04:25:02] Inserat 18/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-xcellence-975797802/
+[04:25:04] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:25:04] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '975797802', 'title': 'Seat Leon Xcellence Limousine', 'brand': 'Seat', 'model': 'Leon', 'year': 2018, 'km':  ... (157 characters truncated) ... ype': 'Benzin', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:04] Inserat 19/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-0-tsi-style-990663273/
+[04:25:06] EXTRA: fuel=Benzin, trans=Schaltgetriebe, drive=Vorderrad, feats=[]
+[04:25:06] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '990663273', 'title': 'Seat Leon 1.0 TSI Style Limousine', 'brand': 'Seat', 'model': 'Leon', 'year': 2022, 'k ... (164 characters truncated) ... ype': 'Benzin', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '[]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:06] Inserat 20/23: https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-st-style-2-0-tdi-virtuell-led-navi-1550792124/
+[04:25:08] EXTRA: fuel=Diesel, trans=Schaltgetriebe, drive=Vorderrad, feats=['led', 'navi']
+[04:25:08] Fehler: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'seller_type'
+[SQL: 
+            INSERT INTO cars (
+                platform, external_id, url, title,
+                brand, model, variant, body_type,
+                year, km, price, power_ps,
+                fuel_type, transmission, drive,
+                seller_type, location, features_raw, description,
+                first_seen, last_seen
+            )
+            VALUES (
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?,
+                ?, ?, ?, ?,
+                datetime('now'), datetime('now')
+            )
+            ON CONFLICT(url) DO UPDATE SET
+                external_id=excluded.external_id,
+                title=excluded.title,
+                brand=excluded.brand,
+                model=excluded.model,
+                variant=excluded.variant,
+                body_type=excluded.body_type,
+                year=excluded.year,
+                km=excluded.km,
+                price=excluded.price,
+                power_ps=excluded.power_ps,
+                fuel_type=excluded.fuel_type,
+                transmission=excluded.transmission,
+                drive=excluded.drive,
+                seller_type=excluded.seller_type,
+                location=excluded.location,
+                features_raw=excluded.features_raw,
+                description=excluded.description,
+                last_seen=datetime('now')
+        ]
+[parameters: [{'platform': 'willhaben', 'external_id': '1550792124', 'title': 'Seat Leon ST STYLE 2,0 TDI *VIRTUELL / LED / NAVI / ... Kombi / Family Van', 'brand': ... (243 characters truncated) ... ', 'transmission': 'Schaltgetriebe', 'drive': 'Vorderrad', 'body_type': None, 'variant': None, 'features_raw': '["led", "navi"]', 'description': None}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+[04:25:08] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-reference-1-2-tsi-shz-pdc-849399607/
+[04:25:08] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-1-5-tgi-fr-virtual-panorama-keyless-led-990796751/
+[04:25:08] Skip (bereits bekannt): https://www.willhaben.at/iad/gebrauchtwagen/d/auto/seat-leon-2-0-tdi-fr-pickerl-neu-1242217935/
+[04:25:08] Alle Inserate gespeichert

@@ -1,7 +1,23 @@
 from config import WILLHABEN_SFID
 from willhaben_url import build_search_url
-from scrapers.scrape_willhaben import run_scrape
+from scrapers.scrape_willhaben_async import run_scrape
 from tools.extract_from_url import extract_profile
+from datetime import datetime
+
+def make_file_logger(name: str):
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    safe = "".join(c for c in name if c.isalnum() or c in (" ", "_", "-")).strip().replace(" ", "_")
+    path = f"logs/{ts}_{safe}.log"
+    import os
+    os.makedirs("logs", exist_ok=True)
+
+    def logger(msg: str):
+        line = f"[{datetime.now().strftime('%H:%M:%S')}] {msg}"
+        print(line)
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(line + "\n")
+    return logger, path
+
 
 URLS = [
 "https://www.willhaben.at/iad/gebrauchtwagen/auto/gebrauchtwagenboerse?sfId=073c28e0-506f-4d1b-a9da-362014b549d5&isNavigation=true&CAR_MODEL/MAKE=1065&CAR_MODEL/MODEL=1691&YEAR_MODEL_FROM=2018&MILEAGE_TO=100000&PRICE_TO=15000",
@@ -29,6 +45,10 @@ def main():
             rows=p["rows"] or 30,
             page=1,
         )
+
+        logger, path = make_file_logger(f"search_{i}")
+        print("Logfile:", path)
+        run_scrape(start_url, log_cb=logger, headless=True)
 
         print(f"\n=== Suche {i}/{len(URLS)} ===")
         print(start_url)
