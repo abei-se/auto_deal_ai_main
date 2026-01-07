@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32fe4393-c1ca-4419-abf1-288863b759f8" name="Changes" comment="" />
+    <list default="true" id="32fe4393-c1ca-4419-abf1-288863b759f8" name="Changes" comment="Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767738030633</updated>
-      <workItem from="1767738031739" duration="3901000" />
+      <workItem from="1767738031739" duration="9271000" />
     </task>
     <servers />
   </component>
