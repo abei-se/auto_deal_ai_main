@@ -4,10 +4,12 @@ import threading
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog, filedialog
 from datetime import datetime
+import requests
 
 # Wichtig: nimm den async scraper
 from scrapers.scrape_willhaben_async import run_scrape as run_scrape_async
 
+SERVER = "192.168.0.158:8000"
 SEARCHES_FILE = "searches.json"
 
 def load_searches():
@@ -151,10 +153,21 @@ class App(tk.Tk):
     def run_scrape_selected(self):
         sel = self.listbox.curselection()
         if not sel:
-            messagebox.showinfo("Info", "Bitte eine Suche auswählen.")
             return
+
         s = self.searches[sel[0]]
-        headless = self.headless_var.get()
+
+        payload = {
+            "url": s["url"],
+            "headless": self.headless_var.get(),
+            "workers": int(self.workers_var.get())
+        }
+
+        try:
+            r = requests.post(f"{SERVER}/scrape", json=payload, timeout=5)
+            self.log(f"Server: {r.json()}")
+        except Exception as e:
+            self.log(f"Server Fehler: {e}")
 
         # Workers setzen (für async scraper: MAX_WORKERS als globale Variable)
         # Einfacher: env var, die dein scraper ausliest, oder du passt scraper an.
@@ -179,19 +192,11 @@ class App(tk.Tk):
         self._run_in_thread(job)
 
     def run_analysis(self):
-        def job():
-            self.set_status("Marktanalyse läuft")
-            self.log("Starte Marktanalyse...")
-            try:
-                import market_analysis
-                market_analysis.main()
-                self.log("Marktanalyse fertig. Schau in exports/.")
-            except Exception as e:
-                self.log(f"Analyse Fehler: {e}")
-            finally:
-                self.set_status("Bereit.")
-
-        self._run_in_thread(job)
+        try:
+            r = requests.post(f"{SERVER}/analyze", timeout=10)
+            self.log("Analyse gestartet auf Server")
+        except Exception as e:
+            self.log(f"Analyse Fehler: {e}")
 
     def run_scrape_and_analysis(self):
         run_started_at = datetime.now()
